@@ -15,8 +15,19 @@ class Heap:
   def get_size(self):
     pass
 
+  def swap(self, big, little):
+      store = self.storage[big]
+      self.storage[big] = self.storage[little]
+      self.storage[little] = store
+
   def _bubble_up(self, index):
-    pass
+    while index > 0:
+        parent = (index-1) // 2
+        if self.storage[index] > self.storage[parent]:
+            swap(index, parent)
+            index = parent
+        else:
+            break
 
   def _sift_down(self, index):
     pass
