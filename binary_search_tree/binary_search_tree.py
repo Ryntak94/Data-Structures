@@ -16,6 +16,10 @@ class BinarySearchTree:
         else:
             self.right.insert(value)
 
+    # def delete(self, value):
+    #     if self.value == value:
+            
+
 
   def contains(self, target):
     if self.value == None:
